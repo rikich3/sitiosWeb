@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busqueda de Universidades</title>
+    <title>MariaDB</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,20 +59,20 @@
 </head>
 <body>
     <div class="container">
-        <img id="logo" src="sunedu.png" alt="Company Logo">
-        <h2>Busqueda filtrada</h2>
+        <img id="logo" src="northwind-payroll-service.jpg" alt="Company Logo">
+        <h2>NorthWind base de datos de muestra</h2>
         <form action="cgi-bin/sort.pl" method="post">
-            <label for="category">Criterio:</label>
+            <label for="category">Select Category:</label>
             <select id="category" name="category">
-                <option value="nombre">Nombre</option>
-                <option value="licenciamiento">Periodo de licenciamiento</option>
-                <option value="departamento">Departamento Local</option>
-                <option value="programa">Programa</option>
+                <option value="Proveedores">Proveedores</option>
+                <option value="Clientes">Clientes</option>
+                <option value="Empleados">Empleados</option>
+                <option value="Productos">Productos</option>
                 <!-- Add more options as needed -->
             </select>
 
-            <label for="searchTerm">Identificador:</label>
-            <input type="text" id="searchTerm" name="searchTerm" placeholder="Ingrese match" required>
+            <label for="searchTerm">Busqueda por nombre:</label>
+            <input type="text" id="searchTerm" name="searchTerm" placeholder="Ingrese Nombre" required>
 
             <button type="submit">Search</button>
         </form>
